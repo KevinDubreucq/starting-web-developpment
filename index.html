@@ -7,26 +7,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
     <script src="main.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,900|Open+Sans:400,700" rel="stylesheet">  
 </head>
 <body>
-    <img src="images/PhotoProfil.jpeg"/>
-    <h1>Tim Berners-Lee</h1>
-    <h2>Inventor of HTML</h2>
-    <p>Tim Berners-Lee is the <strong>inventor</strong> of the Web. In 1989, Tim was working in a computing services section of CERN when he came up with the concept; at the time he had no idea that it would be implemented on such an <strong>enormous scale.</strong></p>
-    <a href="starting-web-developpment">See for yourself</a>
-    <ul>
-            <li> <img src="images/Facebookf.png"/> Facebook</li>
-            <li> <img src="images/Linkedin.png"/> Linkedin</li>
-            <li> <img src="images/twitter.png"/> Twitter</li>
-          </ul> 
-    <h2>His Favorite movies</h2>
-    <img src="images/2001.jpeg"/>
-    <h4>2001 - Space Odyssey</h4>
-    <p>Humanity finds a mysterious, obviously artificial, object buried beneath the Lunar surface and, with the intelligent computer H.A.L. 9000, sets off on a quest.</p>
-    <img src="images/Vacances.jpeg"/>
-    <p>Monsieur Hulot comes to a beachside hotel for a vacation, where he accidentally (but good-naturedly) causes havoc.</p>
-    <img src="images/Alien.jpeg"/>
-    <p>The commercial vessel Nostromo receives a distress call from an unexplored planet. After searching for survivors, the crews heads home only to realize that a deadly bioform has joined them.</p>
-
+    <div class = "Page">
+        <div class = "Profil">
+            <img class = "Photo" src="images/PhotoProfil.jpeg"/>
+            <h1 id = "Titre">Tim Berners-Lee</h1>
+            <h2 id = "SousTitre">Inventor of HTML</h2>
+            <p id = "TexteProfil">Tim Berners-Lee is the <strong>inventor</strong> of the Web. In 1989, Tim was working in a computing services section of CERN when he came up with the concept; at the time he had no idea that it would be implemented on such an <strong>enormous scale.</strong></p>
+            <div>
+                <a class = "BoutonProfil" href="starting-web-developpment">See for yourself</a>
+            </div>
+        </div>
+        <div class = "RéseauxSociaux">
+            <img id="Facebook" src="images/Facebookf.png"/> 
+            <img id="Linkedin" src="images/Linkedin.png"/>
+            <img id="Twitter" src="images/twitter.png"/>
+            <p>Facebook Linkedin Twitter</p>
+        </div>
+        <div class = "FilmsPréférés">
+            <h2 class = "FavFilms">His Favorite movies</h2>
+            <div class = "2001">
+                <img id="2001" src="images/2001.jpeg"/>
+                <div class ="Desc2001">
+                    <h4>2001 - Space Odyssey</h4>
+                    <p>Humanity finds a mysterious, obviously artificial, object buried beneath the Lunar surface and, with the intelligent computer H.A.L. 9000, sets off on a quest.</p>
+                </div>
+            </div>
+            <div class = "Vacances">
+                <img id="Vacances" src="images/Vacances.jpeg"/>
+                <div class ="DescVacances">
+                    <h4>Monsieur Hulot</h4>
+                    <p>Monsieur Hulot comes to a beachside hotel for a vacation, where he accidentally (but good-naturedly) causes havoc.</p>
+                </div>
+            </div>
+            <div class = "Alien">
+                <img id="Alien" src="images/Alien.jpeg"/>
+                <div class ="DescAlien">
+                    <h4>Alien</h4>
+                    <p>The commercial vessel Nostromo receives a distress call from an unexplored planet. After searching for survivors, the crews heads home only to realize that a deadly bioform has joined them.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
