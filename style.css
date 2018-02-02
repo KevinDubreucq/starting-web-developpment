@@ -1,34 +1,43 @@
 .Page {
-    background-color: #ECF2F1;
+    background-color: #E8E9E9;
 
 }
 
 body {
     margin: auto;
-    background-color: #ECF2F1;
+    background-color: #E8E9E9;
 }
 
 .Profil {
     background-color: white;
-    margin-top: 25px;
+    margin-top: 50px;
     margin-left: 500px;
     margin-right: 500px;
     line-height: 30px;
     font-family: Montserrat;
     padding-bottom: 22px;
-    
+    border: 1px solid #B1C3C0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-top: 25px;
+    box-shadow: 1px 1px #787777;
 }
 
 #TexteProfil {
     text-align: justify;
     margin-left: 25px;
     margin-right: 25px;
+    color: #787777;
+    font-size: 145%;
+    line-height: 35px;
 }
 
 
 #Titre {
     text-align: center;
-    color: #EC4646;
+    color: #F25F5F;
     font-family: Montserrat;
     font-weight: 900;
 }
@@ -36,19 +45,25 @@ body {
 #SousTitre {
     text-align: center;
     font-family: Montserrat;
+    font-weight: 700;
+    color: #787777;
 }
 
 .Photo {
+    margin-top: 25px;
     display: block;
     border-radius: 50%;
     margin: auto;
+    width: 20%;
+    height: 20%;
+    border: 5px solid #B1C3C0;
 }
 
 .BoutonProfil {
     margin: auto;
     width: 150px;
     height: 30px;
-    background-color: #EC4646;
+    background-color: #F25F5F;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -71,21 +86,125 @@ body {
     margin-left: 500px;
     margin-right: 500px;
     line-height: 30px;
+    padding-left: 220px;
+    padding-right: 50px;
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-row-gap: 7px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+                "Facebook  Linkedin  Twitter "
+                "Facebook  Linkedin  Twitter ";
+    padding-bottom: 22px;
+    border: 1px solid #B1C3C0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-top: 25px;
+    box-shadow: 1px 1px #787777;
 }
 
-#Facebook {
-    width: 20px;
-    height: 30px;
+.Facebook {
+    grid-area: Facebook;
+    display: grid;
+    grid-template-columns: 100px;
+    grid-column-gap: 30px;
+    grid-row-gap: 7px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+                "Facebookimg"
+                "FacebookTxt";
 }
 
-#Linkedin {
-    width: 30px;
-    height: 30px;
+#Facebookimg {
+    grid-area: Facebookimg;
+    width: 50%;
+    height: 60%;
+    margin: auto;
+    justify-self: center;
+    align-self: center;
+
+}
+
+#FacebookTxt {
+    grid-area: FacebookTxt;
+    justify-self: center;
+    align-self: end;
+    font-family: Montserrat;
+    font-weight: 600;
+    color: #787777;
+    font-size: 145%;
+
+
+}
+
+.Linkedin {
+    grid-area: Linkedin;
+    display: grid;
+    grid-template-columns: 100px;
+    grid-column-gap: 30px;
+    grid-row-gap: 7px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+                "Linkedinimg"
+                "LinkedinTxt";
+}
+
+#Linkedinimg {
+    width: 40%;
+    height: 40%;
+    grid-area: Linkedinimg;
+    margin: auto;
+    justify-self: center;
+    align-self: center;
+
+
 } 
 
-#Twitter {
-    width: 30px;
-    height: 30px;
+#LinkedinTxt {
+    grid-area: LinkedinTxt;
+    justify-self: center;
+    align-self: end;
+    font-family: Montserrat;
+    font-weight: 600;
+    color: #787777;
+    font-size: 145%;
+
+
+}
+
+.Twitter {
+    grid-area: Twitter;
+    display: grid;
+    grid-template-columns: 100px;
+    grid-column-gap: 30px;
+    grid-row-gap: 7px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+                "Twitterimg"
+                "TwitterTxt";
+}
+
+#Twitterimg {
+    width: 30%;
+    height: 50%;
+    grid-area: Twitterimg;
+    justify-self: center;
+    align-self: center;
+
+
+}
+
+#TwitterTxt {
+    grid-area: TwitterTxt;
+    justify-self: center;
+    align-self: end;
+    font-family: Montserrat;
+    font-weight: 600;
+    color: #787777;
+    font-size: 145%;
+
 }
 
 .FilmsPréférés {
@@ -98,38 +217,159 @@ body {
     margin-top: 25px;
     margin-left: 500px;
     margin-right: 500px;
+    margin-bottom: 50px;
     line-height: 30px;
-    grid-template-columns: 300px 600px;
+    border: 1px solid #B1C3C0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-top: 25px;
+    box-shadow: 1px 1px #787777;
+    grid-template-columns: 250px 250px 250px;
     grid-column-gap: 30px;
-    grid-row-gap: 7px;
     grid-template-rows: auto;
     grid-template-areas: 
-                "FavFilm FavFilm"
-                "2001 2001"
-                "2001img 2001img"
-                "2001img 2001img";
+                "FavFilm FavFilm FavFilm"
+                "Odyssey Odyssey Odyssey"
+                "Odyssey Odyssey Odyssey"
+                "Vacances Vacances Vacances"
+                "Vacances Vacances Vacances"
+                "Alien Alien Alien"
+                "Alien Alien Alien";
 }
 
 .FavFilms {
     grid-area: FavFilm;
     margin: auto;
+    font-family: Montserrat;
+    font-weight: 700;   
+    color: #787777;
 }
 
-.2001 {
+.Odyssey {
     display: grid;
-    grid-area: 2001;
-    grid-template-columns: 300px 600px;
+    grid-area: Odyssey;
+    grid-template-columns: 200px 250px 300px;
+    grid-column-gap: 30px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+                "Odysseyimg TitreOdyssey TitreOdyssey"
+                "Odysseyimg DescOdyssey DescOdyssey";
+    
+}
+
+#Odyssey {
+    grid-area: Odysseyimg;
+    width: 60%;
+    height: 60%;
+    align-self: center;
+    justify-self: end;
+}
+
+.DescOdyssey {
+    grid-area: DescOdyssey;
+    align-self: start;
+    justify-self: stretch;
+    font-family: Montserrat;
+    font-weight: 400;
+    color: #787777;
+    font-size: 145%;
+    line-height: 35px;
+
+}
+
+.TitreOdyssey {
+    grid-area: TitreOdyssey;
+    align-self: end;
+    justify-self: center;
+    font-family: Montserrat;
+    font-weight: 600;
+    color: #787777;
+    font-size: 145%;
+}
+
+.Vacances {
+    display: grid;
+    grid-area: Vacances;
+    grid-template-columns: 200px 250px 300px;
     grid-column-gap: 30px;
     grid-row-gap: 7px;
     grid-template-rows: auto;
     grid-template-areas: 
-                "2001img Desc2001";
+                "Vacancesimg TitreVacances TitreVacances"
+                "Vacancesimg DescVacances DescVacances";
 }
 
-#2001 {
-    grid-area: 2001img;
+#Vacances {
+    grid-area: Vacancesimg;
+    width: 60%;
+    height: 60%;
+    align-self: center;
+    justify-self: end;
+    
 }
 
-.Desc2001 {
-    grid-area: Desc2001;
+.DescVacances {
+    grid-area: DescVacances;
+    align-self: start;
+    justify-self: stretch;
+    font-family: Montserrat;
+    font-weight: 400;
+    color: #787777;
+    font-size: 145%;
+    line-height: 35px;
+}
+
+.TitreVacances {
+    grid-area: TitreVacances;
+    align-self: end;
+    justify-self: center;
+    font-family: Montserrat;
+    font-weight: 600;
+    color: #787777;
+    font-size: 145%;
+}
+
+.Alien {
+    display: grid;
+    grid-area: Alien;
+    grid-template-columns: 200px 250px 300px;
+    grid-column-gap: 30px;
+    grid-row-gap: 7px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+                "Alienimg TitreAlien TitreAlien"
+                "Alienimg DescAlien DescAlien";
+}
+
+#Alien {
+    grid-area: Alienimg;
+    width: 60%;
+    height: 60%;
+    align-self: center;
+    justify-self: end;
+}
+
+.DescAlien {
+    grid-area: DescAlien;
+    align-self: start;
+    justify-self: stretch;
+    font-family: Montserrat;
+    font-weight: 400;
+    color: #787777;
+    font-size: 145%;
+    line-height: 35px;
+
+}
+
+.TitreAlien {
+    grid-area: TitreAlien;
+    align-self: end;
+    justify-self: center;
+    font-family: Montserrat;
+    font-weight: 600;
+    color: #787777;
+    font-size: 145%;
+
 }
